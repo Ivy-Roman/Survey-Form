@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center">Roman Petals Client Form</h1>
+            <p id="description" class="description text-center">Kindly fill out the form below to help us know you better.</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="Name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your preferred name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="Email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <p>Gender</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="preferNo">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" id="number" name="number" class="form-control" placeholder="Age" min="16" max="99" required>
+            </div>
+            <div class="form-group">
+                <p>How did you hear about us?</p>
+                <label>
+                <input
+                    name="publicity"
+                    value="Website"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                />Website</label
+                >
+                <label>
+                <input
+                    name="publicity"
+                    value="Facebook"
+                    type="radio"
+                    class="input-radio"
+                />Facebook</label
+                >
+        
+                <label
+                ><input
+                    name="publicity"
+                    value="Referral"
+                    type="radio"
+                    class="input-radio"
+                />Referral</label
+                >
+            </div>
+            <div>
+                <label id="referral-label" for="Name">If Referral, please list name</label>
+                <input type="text" id="referral" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <p>
+                What are your skin care challenges?
+                <span class="clue">(Check all that apply)</span>
+                </p>
+        
+                <label
+                ><input
+                    name="challenges"
+                    value="wrinkles"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Wrinkles/ Fine Lines</label
+                >
+                <label>
+                <input
+                    name="challenges"
+                    value="hyperpigmentation"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Hyperpigmentation/ Sun Damage</label
+                >
+                <label
+                ><input
+                    name="challenges"
+                    value="acne"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Acne/ Acne Scarring</label
+                >
+                <label
+                ><input
+                    name="challenges"
+                    value="redness"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Redness/ Rosacea</label
+                >
+                <label
+                ><input
+                    name="challenges"
+                    value="aging"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Aging</label
+                >
+                <label
+                ><input
+                    name="challenges"
+                    value="melasma"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Melasma</label
+                >
+                <label
+                ><input
+                    name="challenges"
+                    value="sensitivity"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Sensitivity</label
+                >
+                <label
+                ><input
+                    name="challenges"
+                    value="others"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Others</label
+                >
+            </div>
+            <div class="form-group">
+                <p>Any allergies or additional information?</p>
+                <textarea
+                id="allergies"
+                class="input-textarea"
+                name="all"
+                placeholder="Enter your allergies here..."
+                ></textarea>
+            </div>
+        
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
